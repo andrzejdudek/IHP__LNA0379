@@ -1,0 +1,16 @@
+29-Oct-2026 17:13:11 | INFO    | Your Klayout version is: KLayout 0.30.12 (required >= 0.30.5)
+29-Oct-2026 17:13:11 | INFO    | Running SG13G2 LVS checks on design /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/layout/klayout/LNA0379.gds on cell LNA0379
+29-Oct-2026 17:13:53 | INFO    | ==============================================================================
+29-Oct-2026 17:13:53 | INFO    | Important Summary
+29-Oct-2026 17:13:53 | INFO    | +------------------+----------------------------------------------------------------------------------------------------------+
+29-Oct-2026 17:13:53 | INFO    | | Status           | PASS                                                                                                     |
+29-Oct-2026 17:13:53 | INFO    | | Mode             | COMPARE                                                                                                  |
+29-Oct-2026 17:13:53 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                                                                  |
+29-Oct-2026 17:13:53 | INFO    | | Layout           | LNA0379.gds                                                                                              |
+29-Oct-2026 17:13:53 | INFO    | | Top Cell         | LNA0379                                                                                                  |
+29-Oct-2026 17:13:53 | INFO    | | Results Dir      | /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/layout/klayout/lvs_run_LNA0379_2026_10_29_17_13_03 |
+29-Oct-2026 17:13:53 | INFO    | | Warnings         | 0                                                                                                        |
+29-Oct-2026 17:13:53 | INFO    | | Errors           | 0                                                                                                        |
+29-Oct-2026 17:13:53 | INFO    | | Run Time (s)     | 42.326                                                                                                   |
+29-Oct-2026 17:13:53 | INFO    | +------------------+----------------------------------------------------------------------------------------------------------+
+29-Oct-2026 17:13:53 | INFO    | ==============================================================================

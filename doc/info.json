@@ -1,0 +1,28 @@
+{
+  "name": "LNA0379",
+  "design_type": "R",
+  "technology": "IHP",
+  "unique_id": "0379",
+  "license": "Apache-2.0",
+  "trl": 0,
+  "sealring_x": 992.8,
+  "sealring_y": 892.8,
+  "repository": "",
+  "pdk_version": "cfc0e22b92306178ebb5a5bc4865afe3294654d0",
+  "process": "SG13G2",
+  "dependencies": {},
+  "tools": {
+  "xschem": "3.4.8RC",
+  "klayout": "0.30.12",
+  "ngspice": "45",
+  "AWSPalace": "0.18.1",
+  "setupEM": "0.14.2"
+  },
+  "top_cell_name": "LNA0379",
+  "release": {
+    "version": "v.1.0.0",
+    "gds": "release/v.1.0.0/gds",
+    "netlist": "release/v.1.0.0/netlist",
+    "doc": "release/v.1.0.0/doc"
+  }
+}

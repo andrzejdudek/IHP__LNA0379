@@ -1,0 +1,44 @@
+** sch_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/LNA0379_coreLVS.sch
+**.subckt LNA0379_coreLVS inp inn vcc vee outp outn
+*.iopin inp
+*.iopin inn
+*.iopin vcc
+*.iopin vee
+*.iopin outp
+*.iopin outn
+XQ1 net14 ip net7 sub! npn13G2 Nx=8 mm_ok=1
+XQ2 vcc bias2 net14 sub! npn13G2 Nx=8 mm_ok=1
+XQ3 net15 in net7 sub! npn13G2 Nx=8 mm_ok=1
+XQ4 vcc bias2 net15 sub! npn13G2 Nx=8 mm_ok=1
+XQ5 bias1 bias1 net1 sub! npn13G2 Nx=1 mm_ok=1
+XQ6 bias2 bias2 bias1 sub! npn13G2 Nx=1 mm_ok=1
+XR14 bias1 ip sub! rhigh w=1e-6 l=3e-6 m=1 b=0 mm_ok=1
+XR15 bias1 in sub! rhigh w=1e-6 l=3e-6 m=1 b=0 mm_ok=1
+XR1 net7 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR16 vee sub! ptap1 R=1.862056 w=177.13974117e-6 l=0.96025883e-6
+XQ7 vee vee net8 sub! npn13G2 Nx=1 mm_ok=1
+XQ8 vee vee vee sub! npn13G2 Nx=1 mm_ok=1
+XR2 net7 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR3 net7 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR4 net7 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR5 net2 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR6 net3 net2 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR7 net4 net3 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR8 net5 net4 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR9 net1 net5 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR10 net6 bias2 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR11 vcc net6 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR17 net9 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR18 net10 net9 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR19 net11 net10 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR20 net12 net11 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR21 net8 net12 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR22 net13 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR23 vee net13 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XC1 inp ip cap_cmim w=6.0e-6 l=10.9e-6 m=1 mm_ok=1
+XC2 inn in cap_cmim w=6.0e-6 l=10.9e-6 m=1 mm_ok=1
+XC3 vcc outp cap_cmim w=6.0e-6 l=10.9e-6 m=1 mm_ok=1
+XC4 vcc outn cap_cmim w=6.0e-6 l=10.9e-6 m=1 mm_ok=1
+**.ends
+.GLOBAL sub!
+.end

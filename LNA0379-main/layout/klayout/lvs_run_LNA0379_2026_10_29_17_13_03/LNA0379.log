@@ -1,0 +1,450 @@
+# Logfile created on 2026-10-29 17:13:14 +0100 by logger.rb/v1.5.3
+2026-10-29 17:13:14 +0100: Memory Usage (476572K) : Starting running SG13G2 Klayout LVS runset on /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/layout/klayout/LNA0379.gds
+2026-10-29 17:13:14 +0100: Memory Usage (476572K) : Ruby Version for klayout: 3.2.3
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Loading database to memory is complete.
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : SG13G2 Klayout LVS runset output at: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/layout/klayout/lvs_run_LNA0379_2026_10_29_17_13_03/LNA0379.lvsdb
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Evaluate switches.
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Extracted netlist with net names: true
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Extracted netlist with comments in details: false
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected NET_ONLY option: false
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected LAYOUT_NETLIST option: (none)
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected IGNORE_TOP_PORTS_MISMATCH option: true
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected IMPLICIT_NETS option: (none)
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected TOP_LVL_PINS option: false
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected COMBINE DEVICES option: false
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected PURGE option: false
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected PURGE_NETS option: false
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected SIMPLIFY option: true
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected SERIES_RES option: true
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected PARALLEL_RES option: true
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : Selected DISABLE_TAP_EXTRACTION option: false
+2026-10-29 17:13:14 +0100: Memory Usage (477852K) : deep  mode is enabled.
+2026-10-29 17:13:15 +0100: Memory Usage (478876K) : Netlist file: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/netlist/layout/LNA0379.spice
+2026-10-29 17:13:15 +0100: Memory Usage (478876K) : LVS extracted netlist at: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/layout/klayout/lvs_run_LNA0379_2026_10_29_17_13_03/LNA0379_extracted.cir
+2026-10-29 17:13:15 +0100: Memory Usage (478876K) : Applying SRAM integration support.
+2026-10-29 17:13:15 +0100: Memory Usage (478876K) : Starting SG13G2 LVS runset
+2026-10-29 17:13:15 +0100: Memory Usage (478876K) : Read in polygons from layers.
+2026-10-29 17:13:15 +0100: Memory Usage (480412K) : activ_drw has 172 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (480412K) : activ_filler has 26314 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (480412K) : activ has 26486 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (480412K) : activ_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (480412K) : activ_mask has 36 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (480412K) : activ_nofill has 9 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (480668K) : activ_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (480668K) : activ_iOPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (480668K) : activ_noqrc has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481180K) : biwind_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481180K) : biwind_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481180K) : gatpoly_drw has 444 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481180K) : gatpoly_filler has 26314 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481180K) : gatpoly has 26758 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481180K) : gatpoly_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481180K) : gatpoly_nofill has 9 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481436K) : gatpoly_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481436K) : gatpoly_iOPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481436K) : gatpoly_noqrc has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481948K) : cont_drw has 41386 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (481948K) : cont_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (482204K) : nsd_drw has 8 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (482204K) : nsd_block has 36 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (482204K) : metal1_drw has 1546 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (482460K) : metal1_filler has 13675 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (482460K) : metal1_slit has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (482460K) : metal1 has 15221 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (482716K) : metal1_pin has 94 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (482716K) : metal1_mask has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (482716K) : metal1_nofill has 10 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483228K) : metal1_text has 6 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483228K) : metal1_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483228K) : metal1_noqrc has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483484K) : metal1_res has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483484K) : metal1_iprobe has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483484K) : metal1_diffprb has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483484K) : passiv_drw has 54 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483740K) : passiv_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483740K) : passiv_sbump has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483740K) : passiv_pillar has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483996K) : passiv_pdl has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483996K) : metal2_drw has 1387 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483996K) : metal2_filler has 13526 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (483996K) : metal2_slit has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (484252K) : metal2 has 14913 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (484252K) : metal2_pin has 8 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (484508K) : metal2_mask has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (484508K) : metal2_nofill has 10 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (484508K) : metal2_text has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (484508K) : metal2_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (484764K) : metal2_noqrc has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (484764K) : metal2_res has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (484764K) : metal2_iprobe has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485020K) : metal2_diffprb has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485020K) : baspoly_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485020K) : baspoly_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485276K) : psd_drw has 168 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485276K) : nldb_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485276K) : digibnd_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485276K) : via1_drw has 31940 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485532K) : backmetal1_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485532K) : backmetal1_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485788K) : backmetal1_mask has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485788K) : backmetal1_filler has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (485788K) : backmetal1_nofill has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486044K) : backmetal1_slit has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486044K) : backmetal1_text has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486044K) : backmetal1_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486044K) : backmetal1_noqrc has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486300K) : backmetal1_res has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486300K) : backmetal1_iprobe has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486300K) : backmetal1_diffprb has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486300K) : backpassiv_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486300K) : res_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486300K) : sram_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486300K) : trans_drw has 8 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486300K) : ind_drw has 14 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : ind_pin has 28 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : ind_text has 28 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : salblock_drw has 322 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : via2_drw has 23032 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_drw has 1634 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_filler has 8017 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_slit has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3 has 9651 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_pin has 27 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_mask has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_nofill has 10 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_text has 2 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_noqrc has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_res has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_iprobe has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal3_diffprb has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : nwell_drw has 48 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : nwell_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : nwell_text has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : nbulay_drw has 12 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : nbulay_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : nbulay_block has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : emwind_drw has 36 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : emwind_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : deepco_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : mim_drw has 4 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : edgeseal_drw has 24 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : substrate_drw has 36 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : substrate_text has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : dfpad_drw has 42 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : dfpad_pillar has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : dfpad_sbump has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : thickgateox_drw has 12 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : pldb_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : pwell_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : pwell_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : pwell_block has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : ic_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : via3_drw has 36047 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_drw has 1394 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_filler has 3046 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_slit has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4 has 4440 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_pin has 5 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_mask has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_nofill has 13 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_text has 4 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_noqrc has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_res has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_iprobe has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal4_diffprb has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : heattrans_drw has 36 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : heatres_drw has 34 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : fbe_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : empoly_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : digisub_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : text_drw has 144 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : via4_drw has 65762 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_drw has 496 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_filler has 12887 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_slit has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5 has 13383 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_pin has 2 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_mask has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_nofill has 17 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_text has 2 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_noqrc has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_res has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_iprobe has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : metal5_diffprb has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : radhard_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : memcap_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : varicap_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : intbondvia_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : intbondmet_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486556K) : devbondvia_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486812K) : devbondmet_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486812K) : devtrench_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486812K) : redist_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (486812K) : graphbot_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487068K) : graphtop_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487068K) : antvia1_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487068K) : antmetal2_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487324K) : graphcont_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487324K) : siwg_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487324K) : siwg_filler has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487580K) : siwg_nofill has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487580K) : sigrating_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487580K) : singrating_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487580K) : graphpas_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487836K) : emwind3_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487836K) : emwihv3_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (487836K) : redbulay_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488092K) : smos_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488092K) : graphpad_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488092K) : polimide_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488348K) : polimide_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488348K) : recog_drw has 12 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488348K) : recog_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488348K) : recog_esd has 12 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488604K) : recog_diode has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488604K) : recog_tsv has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488604K) : recog_iprobe has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488860K) : recog_diffprb has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488860K) : recog_pillar has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (488860K) : recog_sbump has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489116K) : recog_otp has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489116K) : recog_pdiode has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489116K) : recog_mom has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489116K) : recog_momf has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489372K) : recog_pcm has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489372K) : colopen_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489372K) : graphmetal1_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489628K) : graphmetal1_filler has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489628K) : graphmetal1_nofill has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489628K) : graphmetal1_slit has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489884K) : graphmetal1_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489884K) : graphmet1l_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489884K) : graphmet1l_filler has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (489884K) : graphmet1l_nofill has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490140K) : graphmet1l_slit has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490140K) : graphmet1l_OPC has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490140K) : extblock_drw has 102 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490396K) : nldd_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490396K) : pldd_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490396K) : next_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490652K) : pext_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490652K) : nexthv_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490652K) : pexthv_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490652K) : graphgate_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490908K) : sinwg_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490908K) : sinwg_filler has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (490908K) : sinwg_nofill has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491164K) : mempad_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491164K) : topvia1_drw has 24654 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491164K) : topmetal1_drw has 92 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491420K) : topmetal1_filler has 3114 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491420K) : topmetal1_slit has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491676K) : topmetal1 has 3206 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491676K) : topmetal1_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491676K) : topmetal1_mask has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491676K) : topmetal1_nofill has 17 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491932K) : topmetal1_text has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491932K) : topmetal1_noqrc has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (491932K) : topmetal1_res has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492188K) : topmetal1_iprobe has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492188K) : topmetal1_diffprb has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492188K) : inldpwl_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492444K) : polyres_drw has 34 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492444K) : polyres_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492444K) : vmim_drw has 128 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492444K) : nbulaycut_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492700K) : antmetal1_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492700K) : topvia2_drw has 6266 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492700K) : topmetal2_drw has 216 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492956K) : topmetal2_filler has 3114 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492956K) : topmetal2_slit has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (492956K) : topmetal2 has 3330 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493212K) : topmetal2_pin has 22 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493212K) : topmetal2_mask has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493212K) : topmetal2_nofill has 17 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493468K) : topmetal2_text has 22 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493468K) : topmetal2_noqrc has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493468K) : topmetal2_res has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493724K) : topmetal2_iprobe has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493724K) : topmetal2_diffprb has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493724K) : snsring_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493724K) : sensor_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493980K) : snsarms_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493980K) : snscmosvia_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (493980K) : colwind_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (494236K) : flm_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (494236K) : hafniumox_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (494236K) : memvia_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (494492K) : thinfilmres_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (494492K) : rfmem_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (494492K) : norcx_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (494492K) : norcx_m2m3 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (494748K) : norcx_m2m4 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (494748K) : norcx_m2m5 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (494748K) : norcx_m2tm1 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495004K) : norcx_m2tm2 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495004K) : norcx_m3m4 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495004K) : norcx_m3m5 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495260K) : norcx_m3tm1 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495260K) : norcx_m3tm2 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495260K) : norcx_m4m5 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_m4tm1 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_m4tm2 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_m5tm1 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_m5tm2 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_tm1tm2 has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_m1sub has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_m2sub has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_m3sub has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_m4sub has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_m5sub has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_tm1sub has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : norcx_tm2sub has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : snsbotvia_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : snstopvia_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : deepvia_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : fgetch_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : ctrgat_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : fgimp_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : emwihv_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : lbe_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : alcustop_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : nometfiller_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : prboundary_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange0_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange0_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange0_text has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange1_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange1_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange1_text has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange2_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange2_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange2_text has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange3_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange3_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange3_text has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange4_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange4_pin has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : exchange4_text has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : isonwell_drw has 0 polygons
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : Total no. of polygons in the design is 348199
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : Starting base layers derivations
+2026-10-29 17:13:15 +0100: Memory Usage (495516K) : Starting general LVS derivations
+2026-10-29 17:13:20 +0100: Memory Usage (556188K) : Starting MOSFET DERIVATIONS
+2026-10-29 17:13:21 +0100: Memory Usage (559004K) : Starting NMOS DERIVATIONS
+2026-10-29 17:13:21 +0100: Memory Usage (559004K) : Starting PMOS DERIVATIONS
+2026-10-29 17:13:21 +0100: Memory Usage (564892K) : Starting RF-MOSFET DERIVATIONS
+2026-10-29 17:13:21 +0100: Memory Usage (564892K) : Starting RF-NMOS DERIVATIONS
+2026-10-29 17:13:21 +0100: Memory Usage (564892K) : Starting RF-PMOS DERIVATIONS
+2026-10-29 17:13:21 +0100: Memory Usage (564892K) : Starting BJT DERIVATIONS
+2026-10-29 17:13:21 +0100: Memory Usage (564892K) : Starting NPN-BJT DERIVATIONS
+2026-10-29 17:13:22 +0100: Memory Usage (564892K) : Starting PNP-BJT DERIVATIONS
+2026-10-29 17:13:22 +0100: Memory Usage (564892K) : Starting DIODE DERIVATIONS
+2026-10-29 17:13:23 +0100: Memory Usage (564892K) : Starting RESISTOR DERIVATIONS
+2026-10-29 17:13:23 +0100: Memory Usage (565148K) : Starting CAP DERIVATIONS
+2026-10-29 17:13:25 +0100: Memory Usage (574108K) : Starting CAP_CMOM DERIVATIONS
+2026-10-29 17:13:25 +0100: Memory Usage (574108K) : Starting CAP_CMOMF DERIVATIONS
+2026-10-29 17:13:25 +0100: Memory Usage (574108K) : Starting ESD DERIVATIONS
+2026-10-29 17:13:37 +0100: Memory Usage (604828K) : Starting Inductor DERIVATIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting Taps DERIVATIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting SG13G2 LVS connectivity setup
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting SG13G2 LVS connectivity setup (Inter-layer)
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting SG13G2 LVS connectivity setup (Global)
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting LVS MOSFET CONNECTIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting LVS RF-MOSFET CONNECTIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting LVS BJT CONNECTIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting LVS DIODE CONNECTIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting RESISTOR CONNECTIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting LVS CAP CONNECTIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting CAP_CMOM CONNECTIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting CAP_CMOMF CONNECTIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting ESD CONNECTIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting Inductor CONNECTIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting LVS Taps CONNECTIONS
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting SG13G2 LVS DEVICES EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting MOSFET EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting NMOS EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extraction of NMOS-LV transistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extraction of NMOS-HV transistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting PMOS EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extraction of PMOS-LV transistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extraction of PMOS-HV transistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting RF-MOSFET EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extraction of RF-NMOS-LV transistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extraction of RF-NMOS-HV transistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extraction of RF-PMOS-LV transistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extraction of RF-PMOS-HV transistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting BJT EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting NPN-BJT EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extraction of npn13G2 BJT transistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extraction of npn13G2L BJT transistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extraction of npn13G2V BJT transistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting PNP-BJT EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extracting pnpMPA BJT
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting DIODE EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extracting dantenna diode
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extracting dpantenna diode
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extracting schottky_nbl1 diode
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extracting isolbox diode
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Starting RESISTOR EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extracting rsil resistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extracting rppd resistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extracting rhigh resistor
+2026-10-29 17:13:38 +0100: Memory Usage (604828K) : Extracting res_metal1 resistor
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting res_metal2 resistor
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting res_metal3 resistor
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting res_metal4 resistor
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting res_metal5 resistor
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting res_topmetal1 resistor
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting res_topmetal2 resistor
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Starting CAP EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting cap_cmim device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting rfcmim device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting sg13_hv_svaricap varactor
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting cap_cmomi device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting cap_cmomf device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting sg13_moscap_n capacitor
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting sg13_moscap_p capacitor
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Starting ESD EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting diodevdd_2kv ESD device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting diodevdd_4kv ESD device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting diodevss_2kv ESD device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting diodevss_4kv ESD device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting idiodevdd_2kv ESD device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting idiodevdd_4kv ESD device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting idiodevss_2kv ESD device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting idiodevss_4kv ESD device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting nmoscl_2 ESD device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting nmoscl_4 ESD device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Starting Inductor EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting Inductor2 device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting Inductor3 device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Starting Taps EXTRACTION
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting ntap1 device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Extracting ptap1 device
+2026-10-29 17:13:38 +0100: Memory Usage (605084K) : Starting SG13G2 LVS RF MOS Model Mapping
+2026-10-29 17:13:51 +0100: Memory Usage (702364K) : [layout_netlist] Apply RF MOS model mapping and rfmode parameter.
+2026-10-29 17:13:51 +0100: Memory Usage (702364K) : Starting SG13G2 LVS Options Preparations
+2026-10-29 17:13:51 +0100: Memory Usage (702364K) : SG13G2 LVS flow: extraction -> alignment -> option preparation -> comparison.
+2026-10-29 17:13:51 +0100: Memory Usage (702364K) : Starting SG13G2 LVS Alignment
+2026-10-29 17:13:51 +0100: Memory Usage (702620K) : Starting SG13G2 LVS Simplification
+2026-10-29 17:13:51 +0100: Memory Usage (702620K) : [layout_netlist] simplify: ENABLED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : [layout_netlist] make_top_level_pins: SKIPPED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : [layout_netlist] combine_devices: SKIPPED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : [layout_netlist] purge: SKIPPED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : [layout_netlist] purge_nets: SKIPPED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : [layout_netlist] purge_devices: SKIPPED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : [schematic_netlist] simplify: ENABLED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : [schematic_netlist] make_top_level_pins: SKIPPED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : [schematic_netlist] combine_devices: SKIPPED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : [schematic_netlist] purge: SKIPPED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : [schematic_netlist] purge_nets: SKIPPED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : [schematic_netlist] purge_devices: SKIPPED
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : Starting SG13G2 LVS Comparison
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : ==========================================
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : INFO : Congratulations! Netlists match.
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : ==========================================
+2026-10-29 17:13:51 +0100: Memory Usage (702876K) : LVS Total Run time 36.908507 seconds

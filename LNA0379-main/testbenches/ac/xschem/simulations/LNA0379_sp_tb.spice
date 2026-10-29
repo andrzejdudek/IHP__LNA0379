@@ -1,0 +1,117 @@
+** sch_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/testbenches/ac/xschem/LNA0379_sp_tb.sch
+**.subckt LNA0379_sp_tb
+V1 net1 GND 2.5
+V2 net2 net3 DC 0 AC 0 portnum 1 z0 100
+V3 net4 net5 DC 0 AC 0 portnum 2 z0 100
+Vmeas net1 VCC 0
+.save i(vmeas)
+x1 VCC net4 net5 net2 net3 GND LNA0379_core
+**** begin user architecture code
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerHBT.lib hbt_typ
+.lib cornerRES.lib res_typ
+.lib cornerCAP.lib cap_typ
+.include EM_2_ports.lib
+.include EM_3_ports.lib
+.include rlgc_models.lib
+
+
+
+
+.param supply=2.5
+#.options savecurrents
+.param temp=27
+
+.control
+save all
+op
+let pdc = abs(i(vmeas) * vcc)
+echo $&pdc
+write TB_D-band_amplifier.raw
+set appendwrite
+
+sp dec 101 1MEG 180G 1
+let z0 = 100
+let s11db = db(S_1_1)
+let s21db = db(S_2_1)
+let s12db = db(S_1_2)
+let s22db = db(S_2_2)
+let zin = z_1_1 - (z_1_2 * z_2_1)/(z_2_2 + z0)
+let zout = z_2_2 - (z_1_2 * z_2_1)/(z_1_1 + z0)
+let k = (1 - mag(S_1_1)^2 - mag(S_2_2)^2 + mag(S_1_1*S_2_2 - S_1_2*S_2_1)^2) / (2*mag(S_1_2)*mag(S_2_1))
+let delta = mag(S_1_1 * S_2_2 - S_1_2 * S_2_1)
+meas sp k_min MIN k
+meas sp delta_max MAX delta
+#meas sp nf140 FIND nf AT=140G
+#meas sp nfmin140 FIND nfmin AT=140G
+#meas sp gain140 FIND s21db AT=140G
+meas sp nf120 FIND nf AT=120G
+meas sp nfmin120 FIND nfmin AT=120G
+meas sp gain120 FIND s21db AT=120G
+meas sp gain_max MAX s21db
+write TB_D-band_amplifier.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  LNA0379_core.sym # of pins=6
+** sym_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/LNA0379_core.sym
+** sch_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/LNA0379_core.sch
+.subckt LNA0379_core vcc outp outn inp inn vee
+*.iopin inp
+*.iopin inn
+*.iopin vcc
+*.iopin vee
+*.iopin outp
+*.iopin outn
+XQ1 net16 ip net7 sub! npn13G2 Nx=8 mm_ok=1
+XQ2 net8 bias2 net16 sub! npn13G2 Nx=8 mm_ok=1
+XQ3 net17 in net7 sub! npn13G2 Nx=8 mm_ok=1
+XQ4 net9 bias2 net17 sub! npn13G2 Nx=8 mm_ok=1
+XQ5 bias1 bias1 net1 sub! npn13G2 Nx=1 mm_ok=1
+XQ6 bias2 bias2 bias1 sub! npn13G2 Nx=1 mm_ok=1
+XR14 bias1 ip sub! rhigh w=1e-6 l=3e-6 m=1 b=0 mm_ok=1
+XR15 bias1 in sub! rhigh w=1e-6 l=3e-6 m=1 b=0 mm_ok=1
+XR1 net7 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR16 vee sub! ptap1 R=1.862056 w=177.13974117e-6 l=0.96025883e-6
+XQ7 vee vee net10 sub! npn13G2 Nx=1 mm_ok=1
+XQ8 vee vee vee sub! npn13G2 Nx=1 mm_ok=1
+XR2 net7 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR3 net7 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR4 net7 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR5 net2 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR6 net3 net2 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR7 net4 net3 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR8 net5 net4 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR9 net1 net5 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR10 net6 bias2 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR11 vcc net6 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR17 net11 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR18 net12 net11 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR19 net13 net12 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR20 net14 net13 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR21 net10 net14 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR22 net15 vee sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XR23 vee net15 sub! rppd w=3.5e-6 l=2.2e-6 m=1 b=0 mm_ok=1
+XC1 inp ip cap_cmim w=6.0e-6 l=10.9e-6 m=1 mm_ok=1
+XC2 inn in cap_cmim w=6.0e-6 l=10.9e-6 m=1 mm_ok=1
+XC3 net18 outp cap_cmim w=6.0e-6 l=10.9e-6 m=1 mm_ok=1
+XC4 net19 outn cap_cmim w=6.0e-6 l=10.9e-6 m=1 mm_ok=1
+XX9 net8 net18 gnd! tm2_m4_140_78Ohm length_um=80
+XX1 net9 net19 gnd! tm2_m4_140_78Ohm length_um=80
+XX2 net18 vcc gnd! tm2_m4_140_78Ohm length_um=40
+XX3 net19 vcc gnd! tm2_m4_140_78Ohm length_um=40
+XX4 gnd! inp gnd! tm2_m4_140_78Ohm length_um=100
+XX5 gnd! inn gnd! tm2_m4_140_78Ohm length_um=100
+.ends
+
+.GLOBAL GND
+.GLOBAL VCC
+.GLOBAL sub!
+.end

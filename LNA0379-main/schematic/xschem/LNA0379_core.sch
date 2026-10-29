@@ -1,0 +1,1 @@
+LNA0379_coreLVS.sch

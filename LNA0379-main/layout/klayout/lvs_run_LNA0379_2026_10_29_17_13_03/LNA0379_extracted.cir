@@ -1,0 +1,45 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 29/10/2026 17:13
+
+.SUBCKT LNA0379 GND! VCC!
+X$78484 \$1 VCC! GND! \$I127914 \$I127918 \$I127915 \$I127911 LNA0379_core
+X$101486 \$1 VCC! GND! PadRing
+.ENDS LNA0379
+
+.SUBCKT LNA0379_core \$1 vee vcc inp inn outp outn
+R$1 vee \$1 ptap1 A=170.1p P=356.2u
+C$7 vcc outp cap_cmim w=6u l=10.9u A=65.4p P=33.8u m=1
+C$8 vcc outn cap_cmim w=6u l=10.9u A=65.4p P=33.8u m=1
+C$9 inp ip cap_cmim w=6u l=10.9u A=65.4p P=33.8u m=1
+C$10 inn in cap_cmim w=6u l=10.9u A=65.4p P=33.8u m=1
+R$11 bias1 ip \$1 rhigh w=1u l=3u ps=0u b=0 m=1
+R$12 bias1 in \$1 rhigh w=1u l=3u ps=0u b=0 m=1
+Q$15 vee vee \$20 \$1 npn13G2 we=70n le=900n Nx=1 m=1
+Q$16 vee vee vee \$1 npn13G2 we=70n le=900n Nx=1 m=1
+Q$17 bias2 bias2 bias1 \$1 npn13G2 we=70n le=900n Nx=1 m=1
+Q$18 bias1 bias1 \$27 \$1 npn13G2 we=70n le=900n Nx=1 m=1
+R$19 vee \$18 \$1 rppd w=3.5u l=2.2u ps=0u b=0 m=4
+R$22 \$66 vee \$1 rppd w=3.5u l=2.2u ps=0u b=0 m=2
+R$25 \$20 vee \$1 rppd w=3.5u l=11u ps=0u b=0 m=1
+R$29 \$27 vee \$1 rppd w=3.5u l=11u ps=0u b=0 m=1
+R$31 vcc bias2 \$1 rppd w=3.5u l=4.4u ps=0u b=0 m=1
+Q$37 vcc bias2 \$55 \$1 npn13G2 we=70n le=900n Nx=8 m=1
+Q$38 \$55 ip \$18 \$1 npn13G2 we=70n le=900n Nx=8 m=1
+Q$39 \$53 in \$18 \$1 npn13G2 we=70n le=900n Nx=8 m=1
+Q$40 vcc bias2 \$53 \$1 npn13G2 we=70n le=900n Nx=8 m=1
+.ENDS LNA0379_core
+
+.SUBCKT PadRing \$1 vee vcc
+X$42 \$1 vee$1 \$I41 MatchStandard
+D$1 vee vcc nmoscl_4 m=12
+.ENDS PadRing
+
+.SUBCKT MatchStandard \$1 signal_ref signal
+X$4 signal signal_ref \$1 MatchResistorArray
+X$15 signal signal_ref \$1 MatchResistorArray
+.ENDS MatchStandard
+
+.SUBCKT MatchResistorArray p1 p2 \$3
+R$1 p2 p1 \$3 rppd w=10u l=19u ps=0u b=0 m=5
+R$6 \$I7 \$I1 \$3 rppd w=10u l=19u ps=0u b=0 m=1
+R$7 \$I12 \$I6 \$3 rppd w=10u l=19u ps=0u b=0 m=1
+.ENDS MatchResistorArray

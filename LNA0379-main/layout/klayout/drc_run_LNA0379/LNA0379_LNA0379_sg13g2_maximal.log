@@ -1,0 +1,9 @@
+# Logfile created on 2026-10-29 17:35:15 +0100 by logger.rb/v1.5.3
+2026-10-29 17:35:15 +0100: Memory Usage (474772K) : Starting running IHP-SG13G2 Klayout DRC maximum runset on /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/layout/klayout/LNA0379.gds
+2026-10-29 17:35:15 +0100: Memory Usage (474772K) : Ruby Version for klayout: 3.2.3
+2026-10-29 17:35:15 +0100: Memory Usage (476052K) : Loading database to memory is complete.
+2026-10-29 17:35:15 +0100: Memory Usage (476052K) : IHP-SG13G2 Klayout DRC maximum runset output at: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/layout/klayout/drc_run_LNA0379/LNA0379_LNA0379_sg13g2_maximal.lyrdb
+2026-10-29 17:35:15 +0100: Memory Usage (476308K) : Evaluate switches.
+2026-10-29 17:35:15 +0100: Memory Usage (476308K) : Klayout will use 1 thread(s)
+2026-10-29 17:35:15 +0100: Memory Usage (476308K) : deep mode is enabled for sg13g2_maximal runset.
+2026-10-29 17:35:30 +0100: Memory Usage (520852K) : KLayout DRC run for maximum ruleSet completed in 15.23 seconds

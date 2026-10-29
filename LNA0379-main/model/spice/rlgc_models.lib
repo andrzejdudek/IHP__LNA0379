@@ -1,0 +1,80 @@
+* File: rlgc_models.lib
+
+* --- Universal subckt ---
+.subckt rlgc_core a1 a2 gnd PARAMS: length_um=1000 r_m=1 l_m=1e-12 g_m=0 c_m=1e-15
+.param len_m = 'length_um * 1e-6'
+.param nseg = 5
+.param s_rs = 'r_m * len_m / nseg'
+.param s_ls = 'l_m * len_m / nseg'
+.param s_rp = 'g_m > 0 ? (nseg / (g_m * len_m)) : 1e12'
+.param s_cp = 'c_m * len_m / nseg'
+* 1 section
+r1s a1 n1 's_rs'
+l1 n1 n2 's_ls'
+r1p n2 gnd 's_rp'
+c1 n2 gnd 's_cp'
+* 2 section
+r2s n2 n3 's_rs'
+l2 n3 n4 's_ls'
+r2p n4 gnd 's_rp'
+c2 n4 gnd 's_cp'
+* 3 section
+r3s n4 n5 's_rs'
+l3 n5 n6 's_ls'
+r3p n6 gnd 's_rp'
+c3 n6 gnd 's_cp'
+* 4 section
+r4s n6 n7 's_rs'
+l4 n7 n8 's_ls'
+r4p n8 gnd 's_rp'
+c4 n8 gnd 's_cp'
+* 5 section
+r5s n8 n9 's_rs'
+l5 n9 a2 's_ls'
+r5p a2 gnd 's_rp'
+c5 a2 gnd 's_cp'
+.ends rlgc_core
+
+
+#O1 a1 gnd a2 gnd line_model
+#.model line_model LTRA R=R_m L=L_m G=G_m C=C_m LEN=len_m
+* --- Definitions of different models ---
+* Profile definitions LineMetal_GNDMetal_FrequencyInGHz
+
+* Profile 1:
+.subckt tm1_m4_60 a1 a2 gnd PARAMS: length_um=1000
+* tm1=2.1u, m4=15u, f=60GHz
+Xcore a1 a2 gnd rlgc_core length_um=length_um r_m=24438 l_m=3.649e-7 g_m=0.0053261 c_m=1.4598e-10
+.ends tm1_m4_60
+
+* Profile 2:
+.subckt tm2_m4_140_50Ohm a1 a2 gnd PARAMS: length_um=1000
+* tm2=10u, m4=40u, f=140GHz
+Xcore a1 a2 gnd rlgc_core length_um=length_um r_m=1.083e4 l_m=3.329e-7 g_m=3.415e-2 c_m=1.424e-10
+.ends tm2_m4_140_50Ohm
+
+* Profile 3:
+.subckt tm2_m4_140_78Ohm a1 a2 gnd PARAMS: length_um=1000
+* tm2=2u, m4=40u, f=140GHz
+Xcore a1 a2 gnd rlgc_core length_um=length_um r_m=2.078e4 l_m=5.507e-7 g_m=3.985e-2 c_m=8.989e-11
+.ends tm2_m4_140_78Ohm
+
+* Profile 4:
+.subckt tm2_m4_140_67Ohm a1 a2 gnd PARAMS: length_um=1000
+* tm2=4u, m4=40u, f=140GHz
+Xcore a1 a2 gnd rlgc_core length_um=length_um r_m=1.646e4 l_m=4.701e-7 g_m=3.220e-2 c_m=1.034e-10
+.ends tm2_m4_140_67Ohm
+
+* Profile 4:
+.subckt tm2_m4_140_72Ohm a1 a2 gnd PARAMS: length_um=1000
+* tm2=3u, m4=40u, f=140GHz
+Xcore a1 a2 gnd rlgc_core length_um=length_um r_m=1.821e4 l_m=5.057e-7 g_m=3.506e-2 c_m=9.677-11
+.ends tm2_m4_140_72Ohm
+
+* Profile generic
+.subckt generic a1 a2 gnd PARAMS: length_um=1000
+Xcore a1 a2 gnd rlgc_core length_um=length_um r_m=1e-15 l_m=1.96e-7 g_m=1e-12 c_m=1e-10
+.ends generic
+
+
+

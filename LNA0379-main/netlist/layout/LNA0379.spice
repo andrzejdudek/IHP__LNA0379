@@ -1,0 +1,88 @@
+** sch_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/LNA0379.sch
+.subckt LNA0379
+
+x2 vcc! gnd! PadRing
+x1 vcc! net1 net2 net3 net4 gnd! LNA0379_core
+.ends
+
+* expanding   symbol:  PadRing.sym # of pins=2
+** sym_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/PadRing.sym
+** sch_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/PadRing.sch
+.subckt PadRing VCC VEE
+*.PININFO VCC:B VEE:B
+DD1 VCC VEE nmoscl_4 m=2
+DD2 VCC VEE nmoscl_4 m=2
+DD3 VCC VEE nmoscl_4 m=2
+DD4 VCC VEE nmoscl_4 m=2
+DD5 VCC VEE nmoscl_4 m=2
+DD6 VCC VEE nmoscl_4 m=2
+x1 net1 net2 MatchStandard
+.ends
+
+
+* expanding   symbol:  LNA0379_core.sym # of pins=6
+** sym_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/LNA0379_core.sym
+** sch_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/LNA0379_core.sch
+.subckt LNA0379_core vcc outp outn inp inn vee
+*.PININFO inp:B inn:B vcc:B vee:B outp:B outn:B
+QQ1 net14 ip net7 sub! npn13G2 le=900e-9 we=70.0n Nx=8
+QQ2 vcc bias2 net14 sub! npn13G2 le=900e-9 we=70.0n Nx=8
+QQ3 net15 in net7 sub! npn13G2 le=900e-9 we=70.0n Nx=8
+QQ4 vcc bias2 net15 sub! npn13G2 le=900e-9 we=70.0n Nx=8
+QQ5 bias1 bias1 net1 sub! npn13G2 le=900e-9 we=70.0n Nx=1
+QQ6 bias2 bias2 bias1 sub! npn13G2 le=900e-9 we=70.0n Nx=1
+RR14 bias1 ip 4.41k $SUB=sub! $[rhigh] w=1e-6 l=3e-6 b=0 m=1
+RR15 bias1 in 4.41k $SUB=sub! $[rhigh] w=1e-6 l=3e-6 b=0 m=1
+RR1 net7 vee 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR16 vee sub! ptap1 A=1.701e-10 P=0.0003562
+QQ7 vee vee net8 sub! npn13G2 le=900e-9 we=70.0n Nx=1
+QQ8 vee vee vee sub! npn13G2 le=900e-9 we=70.0n Nx=1
+RR2 net7 vee 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR3 net7 vee 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR4 net7 vee 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR5 net2 vee 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR6 net3 net2 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR7 net4 net3 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR8 net5 net4 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR9 net1 net5 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR10 net6 bias2 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR11 vcc net6 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR17 net9 vee 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR18 net10 net9 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR19 net11 net10 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR20 net12 net11 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR21 net8 net12 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR22 net13 vee 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+RR23 vee net13 183.15 $SUB=sub! $[rppd] w=3.5e-6 l=2.2e-6 b=0 m=1
+CC1 inp ip cap_cmim w=6.0e-6 l=10.9e-6 m=1
+CC2 inn in cap_cmim w=6.0e-6 l=10.9e-6 m=1
+CC3 vcc outp cap_cmim w=6.0e-6 l=10.9e-6 m=1
+CC4 vcc outn cap_cmim w=6.0e-6 l=10.9e-6 m=1
+.ends
+
+
+* expanding   symbol:  MatchStandard.sym # of pins=2
+** sym_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/MatchStandard.sym
+** sch_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/MatchStandard.sch
+.subckt MatchStandard signal signal_ref
+*.PININFO signal:B signal_ref:B
+x1 signal signal_ref MatchResistorArray
+x2 signal signal_ref MatchResistorArray
+.ends
+
+
+* expanding   symbol:  MatchResistorArray.sym # of pins=2
+** sym_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/MatchResistorArray.sym
+** sch_path: /home/dudek/clean_directory/IHP__LNA0379/LNA0379-main/schematic/xschem/MatchResistorArray.sch
+.subckt MatchResistorArray p1 p2
+*.PININFO p1:B p2:B
+RR1 p1 p2 100.14 $SUB=sub! $[rppd] w=10e-6 l=19e-6 b=0 m=5
+RR2 net1 net2 500.7 $SUB=sub! $[rppd] w=10e-6 l=19e-6 b=0 m=1
+RR3 net3 net4 500.7 $SUB=sub! $[rppd] w=10e-6 l=19e-6 b=0 m=1
+* noconn #net1
+* noconn #net2
+* noconn #net4
+* noconn #net3
+.ends
+
+.GLOBAL sub!
